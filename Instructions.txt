@@ -1,0 +1,22 @@
+Installations:
+
+Unity 2021.3.4f1
+MLAgents release 19
+CUDA 11.7.0
+Anaconda3 2022.05
+Python 3.9.12
+
+
+
+MLAgents configuration:
+
+Add MLAgents package in Unity
+Window -> Package Manager -> Packages: Unity Registry -> Search: ML Agents -> Install
+
+
+Ananconda Configuration:
+
+Create a MLAgent folder and store the downloaded MLAgent release directory in it.
+Anaconda Navigator -> Environments -> Enter name of the environment -> Package: Python 3.9.12
+Anaconda prompt -> cd <MLAgent directory> 
+pip install mlagents
