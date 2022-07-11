@@ -1095,6 +1095,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1325675357385357516}
+  - component: {fileID: 1814508758475285111}
+  - component: {fileID: 1814508758475285112}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -1102,6 +1104,64 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1814508758475285111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814508758475285110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700c77879b365af42bea54b37899e997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  p1: {fileID: 132973622839248179}
+  p2: {fileID: 3750085892895797276}
+  p3: {fileID: 4169634308285011367}
+  p4: {fileID: 1587477557724483389}
+  p5: {fileID: 5476674885847659340}
+  p6: {fileID: 3592097410324526469}
+  p7: {fileID: 7917234144159237220}
+  p8: {fileID: 4103726322397303039}
+  p9: {fileID: 9098794562583110288}
+  redobject: {fileID: 1559573891051815862, guid: 127f45cb762d33a4f93e3c7fe848c32a, type: 3}
+  blueobject: {fileID: 2518274105673106438, guid: bd09912f89925cf41a3b75ed9e7269a6, type: 3}
+  greenobject: {fileID: 2598513519505810847, guid: 11187a4f1cdaf6343a8e9c02bf7a1f8e, type: 3}
+--- !u!114 &1814508758475285112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814508758475285110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 120
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 9
+      BranchSizes: 01000000
+    VectorActionSize: 
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: Picker
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
 --- !u!23 &1988438129206450081
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2941,7 +3001,7 @@ ConfigurableJoint:
   m_GameObject: {fileID: 9098794562583110288}
   m_ConnectedBody: {fileID: 8347903519464290290}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: -0.12, y: 0.16, z: 2.11}
+  m_Anchor: {x: -0.13, y: 0.16, z: 2.11}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
@@ -3036,7 +3096,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9098794562583110288}
   serializedVersion: 2
-  m_Mass: 1.1
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
